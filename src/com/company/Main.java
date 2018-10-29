@@ -7,21 +7,24 @@ public class Main {
 
 
     public static void main(String[] args) {
-        System.out.println("Ejercicio 2 Arrays");
+        System.out.println("Ejercicio 13 Arrays");
+        System.out.println("Introduzca un número para buscar si está en el array");
         Scanner sc =new Scanner(System.in);
-        System.out.println("Introduzca un número para comprobar si es primo");
+
+        int[] array ={2,1,3,4};
         int num = sc.nextInt();
 
-        boolean primo = true;
-
-        for (int i=2; i<num; i++) {
-            if (num % i==0){
-                primo=false;
+        boolean isContained = false;
+        int position = -1;
+        for (int i = 0; i < array.length; i++){
+            if (num=i){
+                isContained = true;
+                position = i;
                 break;
             }
         }
-        System.out.println("¿El número es primo? "+primo);
 
+        System.out.println("¿Esta el número? "+isContained + "La posición es: "+position);
 
 
     }
