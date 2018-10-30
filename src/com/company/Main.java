@@ -17,14 +17,15 @@ public class Main {
         boolean isContained = false;
         int position = -1;
         for (int i = 0; i < array.length; i++){
-            if (num=i){
+
+            if (num==array[i]){
                 isContained = true;
                 position = i;
                 break;
             }
         }
 
-        System.out.println("¿Esta el número? "+isContained + "La posición es: "+position);
+        System.out.println("¿Esta el número? "+isContained + " La posición es: "+position);
 
 
     }
