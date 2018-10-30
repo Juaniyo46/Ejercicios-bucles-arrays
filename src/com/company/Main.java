@@ -7,25 +7,15 @@ public class Main {
 
 
     public static void main(String[] args) {
-        System.out.println("Ejercicio 13 Arrays");
-        System.out.println("Introduzca un número para buscar si está en el array");
+        System.out.println("Ejercicio 15 Arrays");
+        System.out.println("Introduzca un número para calcular su raiz cuadrada");
         Scanner sc =new Scanner(System.in);
 
-        int[] array ={4,3,2,1};
-        int num = sc.nextInt();
+        Double num =sc.nextDouble();
 
-        boolean isContained = false;
-        int position = -1;
-        for (int i = 0; i < array.length; i++){
+        System.out.printf("El resultado de la raiz cuadrada de %f es: "+Math.pow(Math.abs(num),0.5),num);
 
-            if (num==array[i]){
-                isContained = true;
-                position = i;
-                break;
-            }
-        }
 
-        System.out.println("¿Esta el número? "+isContained + " La posición es: "+position);
 
 
     }
