@@ -1,19 +1,34 @@
 package com.company;
 
-import java.util.Arrays;
-import java.util.Scanner;
+import java.lang.reflect.Array;
+import java.util.*;
 
 public class Main {
 
 
     public static void main(String[] args) {
-        System.out.println("Ejercicio 15 Arrays");
-        System.out.println("Introduzca un número para calcular su raiz cuadrada");
+        System.out.println("Ejercicio 12 ArraysList");
+        System.out.println("Ordenación de los números de un vector");
         Scanner sc =new Scanner(System.in);
 
-        Double num =sc.nextDouble();
+        int[] array={4,3,2,1};
+        int[] array1={3,2,1,4};
 
-        System.out.printf("El resultado de la raiz cuadrada de %f es: "+Math.pow(Math.abs(num),0.5),num);
+         ArrayList<Integer> list = new ArrayList<>();
+
+         for (int i=0;i<array.length;i++) {
+             list.add(array[i]);
+         }
+         Collections.sort(list);
+        System.out.println(list);
+
+
+
+
+
+
+
+
 
 
 
