@@ -11,7 +11,7 @@ public class Main {
         System.out.println("Introduzca un número para buscar si está en el array");
         Scanner sc =new Scanner(System.in);
 
-        int[] array ={2,1,3,4};
+        int[] array ={4,3,2,1};
         int num = sc.nextInt();
 
         boolean isContained = false;
